@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import GlobalStyle from './styles/global'
+import Home from './pages/Home'
+import Edit from './pages/Edit'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export type ItensProps = {
+  id: string
+  value: string
 }
 
-export default App;
+const App = () => (
+  <>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/edit/:id" element={<Edit />} />
+      </Routes>
+    </Router>
+    <GlobalStyle />
+  </>
+)
+
+export default App

@@ -1,0 +1,53 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ],
+    "@babel/preset-typescript",
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-syntax-jsx"
+  ]
+}
+
+// {
+//   "presets": [
+//       [
+//           "@babel/preset-env",
+//           {
+//               "targets": {
+//                   "node": "current"
+//               }
+//           }
+//       ],
+//       "@babel/preset-typescript",
+//       [
+//           "@babel/preset-react",
+//           {
+//               "runtime": "automatic"
+//           }
+//       ]
+//   ],
+//   "plugins": [
+//     "@babel/plugin-transform-runtime",
+//       "@babel/plugin-syntax-jsx", 
+//         [
+//           "polyfill-corejs2",
+//           {
+//             "method": "usage-global"
+//           }
+//         ]
+      
+//   ]
+// }
