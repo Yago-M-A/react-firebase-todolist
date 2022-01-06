@@ -1,7 +1,7 @@
 ## React ToDoList
 Projeto desenvolvido com Typescript, ReactJS e Firebase, com a proposta de ser uma aplicação de criar uma lista de tarefas, podendo criar, editar e deletar.
 
-- [Live Preview](https://pokemonsearchapi.netlify.app/)
+- [Live Preview](https://react-firebase-todolist.netlify.app/)
 
 <img src='https://github.com/Yago-M-A/react-firebase-todolist/blob/master/public/readme/Screenshot_802.png' width='100%'><img src='https://github.com/Yago-M-A/react-firebase-todolist/blob/master/public/readme/Screenshot_803.png' width='50%'><img src='https://github.com/Yago-M-A/react-firebase-todolist/blob/master/public/readme/Screenshot_804.png' width='50%'>
 
